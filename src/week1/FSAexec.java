@@ -1,20 +1,21 @@
 package week1;
+import java.util.Random;
+
 public class FSAexec {
-
-    public static final String input_string = "bac";
-
     public static void main(String[] args) {
-        // TODO: fix it and test with 4 extra examples
+        String input_string = generateRandomString();
         new FSAexec().fsaExec(input_string);
     }
-
-    /**
-     * TODO: Understand the code and make it better.
-     *
-     * @param input the input string for this automaton
-     */
-
-    void fsaExec(String input) {
+    public static String generateRandomString() {
+        String characters = "abc";
+        int length = new Random().nextInt(8) + 3;
+        char[] text = new char[length];
+        for (int i = 0; i < length; i++) {
+            text[i] = characters.charAt(new Random().nextInt(characters.length()));
+        }
+        return new String(text);
+    }
+    void fsaExec(String input_string) {
         boolean[] acceptState = {false, false, false, true};
 
         int[][] tranTab = { // transition table for 3 different input symbols
@@ -27,15 +28,14 @@ public class FSAexec {
         System.out.printf("Input is %s%n", input_string);
 
         int state = 0;
-        for (int i = 0; i < input.length(); i++) {
-            char inchar = input.charAt(i);
+        for (int i = 0; i < input_string.length(); i++) {
+            char inchar = input_string.charAt(i);
             int incharIndex = inchar - 'a';
             state = tranTab[state][incharIndex];
 
-            System.out.printf("State: %s of %s%n",incharIndex,input.length());
+            System.out.printf("State: %s of %s%n",incharIndex,input_string.length());
             System.out.printf("Checking %s%n", inchar);
         }
         System.out.println(acceptState[state]);
     }
-
 }
