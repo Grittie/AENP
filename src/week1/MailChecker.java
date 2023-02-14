@@ -9,7 +9,7 @@ public class MailChecker {
 
 
     // This variable stores the compiled pattern for email validation.
-    private static Pattern pattern = Pattern.compile(EMAIL_PATTERN);
+    private static final Pattern pattern = Pattern.compile(EMAIL_PATTERN);
 
     /**
      * This method checks if the provided email string matches the email pattern.
