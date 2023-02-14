@@ -6,7 +6,6 @@ public class FSAexec {
 
     /**
      * Main method that generates a random string and calls the fsaExec method
-     *
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -18,7 +17,6 @@ public class FSAexec {
 
     /**
      * Method that generates a random string from 3 to 10 characters using "a", "b", and "c".
-     *
      * @return the generated random string
      */
     public static String generateRandomString() {
@@ -37,8 +35,7 @@ public class FSAexec {
     }
 
     /**
-     * Method that executes the finite state automaton (FSA)
-     *
+     * Method that executes the finite state automation (FSA)
      * @param input_string the input string to be processed by the FSA
      */
     void fsaExec(String input_string) {
