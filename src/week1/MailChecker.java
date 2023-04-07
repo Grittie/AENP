@@ -26,6 +26,7 @@ public class MailChecker {
      * @param args command line arguments (not used)
      */
     public static void main(String[] args) {
+        System.out.println("Lars Grit, IT102");
         String[] emails = {"john.doe@HvA.nl", "jane.doe@HVA.NL", "john.doe@hvvaa.com", "jane.doe@gmail.NL"};
         for (String email : emails) {
             System.out.println(email + " is valid: " + validate(email));

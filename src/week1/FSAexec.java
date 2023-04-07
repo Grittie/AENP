@@ -39,6 +39,7 @@ public class FSAexec {
      * @param input_string the input string to be processed by the FSA
      */
     void fsaExec(String input_string) {
+        System.out.println("Lars Grit, IT102");
         // Array of boolean values indicating whether each state is an accept state
         boolean[] acceptState = {false, false, false, true};
 

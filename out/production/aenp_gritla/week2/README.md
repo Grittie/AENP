@@ -48,10 +48,10 @@ Run code
 
 
 ## IntelliJ UML
-![IntelliJ](../../images/week2/car/intellij_uml.png)
+![IntelliJ](../../images/week2/intellij_uml.png)
 
 ## PlantUML
-![Plant](../../images/week2/car/plant_uml.png)
+![Plant](../../images/week2/plant_uml.png)
 
 The main differences between the PlantUML and IntelliJ UML diagrams are that PlantUML
 shows the values needed for the constructor and shows the methods in each class.
@@ -60,9 +60,7 @@ shows the values needed for the constructor and shows the methods in each class.
 
 # Pet
 
-Pet is a program that makes use polymorph and subclasses to make pet sorts with their own values and relevant sound. 
-
-This program also uses a test program that makes it easy to create pets.
+Pet is a program that makes use polymorph and subclasses to make pet sorts with their own values. 
 ## Authors
 
 - [@Lars Grit](https://gitlab.fdmci.hva.nl/gritla)
@@ -70,8 +68,7 @@ This program also uses a test program that makes it easy to create pets.
 
 ## Features
 
-- Seperate test program
-- Multiple pets derived from other pet families
+- Multiple test cases
 
 
 
@@ -92,13 +89,13 @@ Go to the project directory
 Compile code
 
 ```bash
-  javac PetTest.java
+  javac Pet.java
 ```
 
 Run code
 
 ```bash
-  java PetTest
+  java Pet
 ```
 
 
@@ -107,4 +104,4 @@ Run code
 **Backend:** Java JDK19
 
 ## PlantUML
-![Plant](../../images/week2/pet/plant_uml.png)
+![Plant](../../images/week2/plant_uml.png)

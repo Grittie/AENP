@@ -1,0 +1,32 @@
+@startuml
+class week2.PetTest {
++ {static} void main(String[])
+}
+
+abstract class week2.Pet {
+- String name
+- int age
+- String color
++ {abstract}String makeSound()
++ String toString()
++ {static} void main(String[])
+}
+class week2.Dog {
++ String makeSound()
+}
+class week2.Poodle {
++ String makeSound()
+}
+class week2.Cat {
++ String makeSound()
+}
+class week2.Tiger {
++ String makeSound()
+}
+
+
+week2.Pet <|-- week2.Dog
+week2.Dog <|-- week2.Poodle
+week2.Pet <|-- week2.Cat
+week2.Cat <|-- week2.Tiger
+@enduml

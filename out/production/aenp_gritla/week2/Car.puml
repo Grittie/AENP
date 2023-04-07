@@ -1,0 +1,11 @@
+@startuml
+class week2.Car {
+~ String company
+~ String type
+~ String color
+~ void getInfo()
+}
+class week2.test {
++ {static} void main(String[])
+}
+@enduml
