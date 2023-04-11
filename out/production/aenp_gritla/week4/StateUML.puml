@@ -1,0 +1,48 @@
+@startuml
+class week4.TestMachine {
++ {static} void main(String[])
+}
+class week4.Machine {
+- State currentstate
++ void Machine()
++ void processA()
++ void processB()
++ String toString()
+}
+abstract class week4.State {
+~ {abstract}State a()
+~ {abstract}State b()
+}
+class week4.StateF {
++ State a()
++ State b()
++ String toString()
+}
+class week4.StateQ {
++ State a()
++ State b()
++ String toString()
+}
+class week4.StateR {
++ State a()
++ State b()
++ String toString()
+}
+class week4.StateS {
++ State a()
++ State b()
++ String toString()
+}
+class week4.StateT {
++ State a()
++ State b()
++ String toString()
+}
+
+
+week4.State <|-- week4.StateF
+week4.State <|-- week4.StateQ
+week4.State <|-- week4.StateR
+week4.State <|-- week4.StateS
+week4.State <|-- week4.StateT
+@enduml

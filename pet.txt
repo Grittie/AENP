@@ -1,0 +1,4 @@
+dog,walter,10,brown
+dog,walter,10,brown
+cat,jeronihmo,9,blackish
+dog,walter,10,brown

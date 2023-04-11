@@ -1,0 +1,43 @@
+@startuml
+abstract class week5.Pet {
+- String name
+- int age
+- String color
++ {abstract}String makeSound()
++ String toString()
++ {static} void main(String[])
+}
+class week5.Dog {
++ String makeSound()
+}
+class week5.Poodle {
++ String makeSound()
+}
+class week5.Cat {
++ String makeSound()
+}
+class week5.Tiger {
++ String makeSound()
+}
+
+class week5.FileManipulator {
++ {static} void main(String[])
+~ {static} void create()
+~ {static} void write(String,String,int,String)
+~ {static} void read()
+~ {static} void editLine(int,String)
+}
+
+class week5.PetTest {
++ {static} void main(String[])
+~ {static} void createPet()
+~ {static} void editPet()
+~ {static} void readPets()
+}
+
+
+week5.Pet <|-- week5.Dog
+week5.Dog <|-- week5.Poodle
+week5.Pet <|-- week5.Cat
+week5.Cat <|-- week5.Tiger
+@enduml
