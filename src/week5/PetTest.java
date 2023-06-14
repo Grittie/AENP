@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class PetTest {
     public static void main(String[] args) {
-
         System.out.println("Welcome to the Pet Interface.");
         System.out.println("1. Create pet");
         System.out.println("2. Edit pet");

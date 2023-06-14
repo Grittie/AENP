@@ -36,9 +36,9 @@ public class FileManipulator {
             PrintWriter output = new PrintWriter(writer);
             output.println(type + "," + name + "," + age + "," + color);
             output.close();
-            System.out.println("Klaar!");
+            System.out.println("Done");
         } catch (IOException e) {
-            System.out.println("Er ging wat mis...");
+            System.out.println("An error occured");
             e.printStackTrace();
         }
     }
@@ -47,7 +47,7 @@ public class FileManipulator {
         try {
             File file = new File("pet.txt");
             Scanner scanner = new Scanner(file);
-            while(scanner.hasNext()) { // Doorloop het bestand
+            while(scanner.hasNext()) { // Read the file
                 String tekstRegel = scanner.nextLine(); // Haal er één regel uit.
 
                 String[] pet_values = tekstRegel.split(",");

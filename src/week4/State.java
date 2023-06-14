@@ -1,6 +1,8 @@
 package week4;
 
 abstract class State {
+    public State() {
+    }
 
     abstract State a();
     abstract State b();
